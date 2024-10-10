@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">LMS</string>
+    <string name="let_s_begin_growing_our_skills">Let\'s Begin Growing Our Skills.</string>
+    <string name="home_second_quote">The complete App to start learning new skill and growing your skill.</string>
+    <string name="get_started">Get Started</string>
+    <string name="category">Category</string>
+    <string name="back">Back</string>
+    <string name="ready_to_learn">Ready To Learn</string>
 </resources>

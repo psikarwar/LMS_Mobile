@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#867FF4"/> <!-- Color of the active dot -->
+    <size android:width="16dp" android:height="8dp"/>
+    <corners android:radius="4dp"/> <!-- Rounded corners -->
+</shape>
