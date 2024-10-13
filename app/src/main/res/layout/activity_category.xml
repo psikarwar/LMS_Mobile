@@ -12,12 +12,12 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
         android:orientation="horizontal"
         android:paddingStart="24dp"
         android:paddingTop="68dp"
-        android:paddingEnd="24dp"
-        android:layout_gravity="center_vertical">
+        android:paddingEnd="24dp">
 
         <ImageView
             android:id="@+id/backArrow"
@@ -48,25 +48,71 @@
         android:id="@+id/tvRTL"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:fontFamily="@font/urbanist_medium"
-        android:letterSpacing=".15"
-        android:paddingStart="8dp"
-        android:paddingEnd="8dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/urbanist_semibold"
+        android:letterSpacing=".015"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
         android:text="@string/ready_to_learn"
         android:textColor="#E8E4FF"
-        android:textSize="16sp" />
+        android:textSize="32sp" />
 
     <TextView
         android:id="@+id/tvSubject"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:fontFamily="@font/urbanist_medium"
-        android:letterSpacing=".15"
-        android:paddingStart="8dp"
-        android:paddingEnd="8dp"
-        android:text="@string/category"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/inter_light"
+        android:letterSpacing=".015"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:text="@string/choose_your_subject"
         android:textColor="#E8E4FF"
         android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/whiteBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:background="@drawable/rounded_background"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Tab Layout for navigation menu -->
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:tabGravity="start"
+            app:tabIndicatorColor="#6C63FF"
+            app:tabIndicatorHeight="2dp"
+            app:tabSelectedTextColor="#0C0A1C"
+            app:tabTextAppearance="@style/TabTextStyle"
+            app:tabTextColor="#6C63FF">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="All" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Favourite" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Recommended" />
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
 </LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/courseView"
+    android:layout_width="156dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="#FFB4B4"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Course Title -->
+        <TextView
+            android:id="@+id/courseTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="@string/social_media_class"
+            android:fontFamily="@font/urbanist_medium"
+            android:textColor="#0C0A1C"
+            android:letterSpacing=".015"
+            android:textSize="14sp"
+            android:alpha="85"
+            android:textStyle="bold" />
+
+        <!-- Course Subtitle -->
+        <TextView
+            android:id="@+id/courseSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:text="@string/_15_course"
+            android:fontFamily="@font/inter_light"
+            android:textColor="#1B163F"
+            android:textSize="14sp" />
+
+        <!-- Course Image -->
+        <ImageView
+            android:id="@+id/courseImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/course_image"
+            android:src="@drawable/social_media_class" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

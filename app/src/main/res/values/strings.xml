@@ -5,5 +5,9 @@
     <string name="get_started">Get Started</string>
     <string name="category">Category</string>
     <string name="back">Back</string>
-    <string name="ready_to_learn">Ready To Learn</string>
+    <string name="ready_to_learn">Ready To Learn?</string>
+    <string name="choose_your_subject">Choose your subject.</string>
+    <string name="social_media_class">Social Media Class</string>
+    <string name="_15_course">15 Course</string>
+    <string name="course_image">Course Image</string>
 </resources>
