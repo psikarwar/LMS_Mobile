@@ -10,4 +10,20 @@
     <string name="social_media_class">Social Media Class</string>
     <string name="_15_course">15 Course</string>
     <string name="course_image">Course Image</string>
+    <string name="hello_welcome">Hello, Welcome 👋</string>
+    <string name="cameron_williamson">Cameron Williamson</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="get_your_best_course_today">Get Your \n<font color="#6D57FC" face="inter">Best Course</font> Today!</string>
+    <string name="ic_play">Play icon</string>
+    <string name="ic_bookmark">ic_bookmark</string>
+    <string name="by_leo_nikuma">By Leo Nikuma</string>
+    <string name="course_pic">Course Image</string>
+    <string name="_3d_illustration_course">3D Illustration\nCourse</string>
+    <string name="course_of_the_week">Course of The Week</string>
+    <string name="_3d_character_lumion">3D Character Lumion</string>
+    <string name="duration_1hr_20min">Duration: 1hr 20min</string>
+    <string name="rating">rating</string>
+    <string name="top_image">Top Image</string>
+    <string name="bottom_image">Bottom Image</string>
+    <string name="back_arrow">Back Arrow</string>
 </resources>

@@ -6,12 +6,12 @@ import com.example.lms.databinding.ActivityCategoryBinding
 import com.google.android.material.tabs.TabLayoutMediator
 
 class CategoryActivity : AppCompatActivity() {
-    private lateinit var binding : ActivityCategoryBinding
+    private var binding : ActivityCategoryBinding? = null
     private lateinit var adapter: ViewPagerAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityCategoryBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(binding?.root)
 
         adapter = ViewPagerAdapter(supportFragmentManager, lifecycle)
 
@@ -19,9 +19,9 @@ class CategoryActivity : AppCompatActivity() {
         adapter.addFragment(AllCoursesFragment(), "Favourite")
         adapter.addFragment(AllCoursesFragment(), "Recommended")
 
-        binding.viewPager.adapter = adapter
+        binding?.viewPager?.adapter = adapter
 
-        TabLayoutMediator(binding.tabLayout, binding.viewPager) { tab, position ->
+        TabLayoutMediator(binding?.tabLayout!!, binding?.viewPager!!) { tab, position ->
             tab.text = adapter.getPageTitle(position)
         }.attach()
 
@@ -38,5 +38,10 @@ class CategoryActivity : AppCompatActivity() {
 //                // Handle tab reselection
 //            }
 //        })
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        binding = null
     }
 }

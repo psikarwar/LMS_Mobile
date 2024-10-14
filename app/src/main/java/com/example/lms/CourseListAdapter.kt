@@ -9,6 +9,7 @@ import com.example.lms.databinding.ItemCourseBinding
 
 class CourseListAdapter(private val courseList: List<Course>) :
     RecyclerView.Adapter<CourseListAdapter.CourseViewHolder>() {
+    private var courseClickListener: OnCourseClickListener? = null
 
     private val colors = listOf(
         Color.parseColor("#FFB4B4"),
@@ -29,6 +30,10 @@ class CourseListAdapter(private val courseList: List<Course>) :
         }
     }
 
+    interface OnCourseClickListener {
+        fun onCourseClick(position: Int, course: Course)
+    }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CourseViewHolder {
         return CourseViewHolder(
             ItemCourseBinding.inflate(
@@ -39,12 +44,20 @@ class CourseListAdapter(private val courseList: List<Course>) :
         )
     }
 
+    fun setOnClickListener(onCourseClickListener: OnCourseClickListener) {
+        this.courseClickListener = onCourseClickListener
+    }
+
     override fun onBindViewHolder(holder: CourseViewHolder, position: Int) {
         val course = courseList[position]
         holder.bindItem(course)
 
         val colorIndex = position % colors.size
         holder.cardView.setCardBackgroundColor(colors[colorIndex])
+
+        holder.itemView.setOnClickListener {
+            courseClickListener?.onCourseClick(position, course)
+        }
     }
 
     override fun getItemCount(): Int {

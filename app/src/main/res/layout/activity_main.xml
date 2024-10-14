@@ -10,7 +10,7 @@
         android:id="@+id/bottomImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:contentDescription="Bottom Image"
+        android:contentDescription="@string/bottom_image"
         android:scaleType="fitXY"
         android:src="@drawable/background" />
 
@@ -28,7 +28,7 @@
             android:layout_gravity="bottom|end"
             android:layout_marginEnd="0dp"
             android:layout_marginBottom="0dp"
-            android:contentDescription="Top Image"
+            android:contentDescription="@string/top_image"
             android:src="@drawable/illustration" />
 
         <LinearLayout
