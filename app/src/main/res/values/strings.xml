@@ -26,4 +26,14 @@
     <string name="top_image">Top Image</string>
     <string name="bottom_image">Bottom Image</string>
     <string name="back_arrow">Back Arrow</string>
+    <string name="detail_course">Detail Course</string>
+    <string name="_3d_illustration_course2">3D Illustration Course</string>
+    <string name="_12_lessons">12 Lessons</string>
+    <string name="_1hr_20min">1hr 20min</string>
+    <string name="course_description">This course will teach the basic how to start 3D from beginning to finish. 12 lessons more than 1 hour.</string>
+    <string name="thumbnail">Thumbnail</string>
+    <string name="_00_trailer">00 - Trailer</string>
+    <string name="_15_00_min">15:00 min</string>
+    <string name="lock_icon">Lock Icon</string>
+    <string name="time">time</string>
 </resources>

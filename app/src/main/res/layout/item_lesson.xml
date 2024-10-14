@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Lesson Thumbnail -->
+        <ImageView
+            android:id="@+id/lessonImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/thumbnail"
+            android:src="@drawable/trailer"
+            android:scaleType="centerCrop" />
+
+        <!-- Lesson Title and Duration -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1">
+
+            <!-- Lesson Duration -->
+            <TextView
+                android:id="@+id/lessonDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_15_00_min"
+                android:textColor="#1B163F"
+                android:letterSpacing=".015"
+                android:textSize="12sp"
+                android:fontFamily="@font/inter_light" />
+
+            <!-- Lesson Title -->
+            <TextView
+                android:id="@+id/lessonTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_00_trailer"
+                android:textColor="#0C0A1C"
+                android:letterSpacing=".015"
+                android:textSize="16sp"
+                android:fontFamily="@font/urbanist_medium" />
+        </LinearLayout>
+
+        <!-- Lesson Lock/Unlock Icon -->
+        <ImageView
+            android:id="@+id/lockIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_lock"
+            android:contentDescription="@string/lock_icon" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
